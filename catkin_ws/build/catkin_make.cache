@@ -1,2 +1,0 @@
-ball_chaser:my_robot
--DCATKIN_DEVEL_PREFIX=/home/argosx/Documents/codes/robotics-software-engineer-udacity/3_ROS_Essentials/project_go_chase_it/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/argosx/Documents/codes/robotics-software-engineer-udacity/3_ROS_Essentials/project_go_chase_it/catkin_ws/install -G Unix Makefiles
