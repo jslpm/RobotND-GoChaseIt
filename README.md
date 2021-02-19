@@ -17,10 +17,10 @@ This repo contains the second project of the Robotics Software Engineer Nanodegr
 ## Basic Running Instructions
 
 1. Clone this repo.
-2. Make a build directory in the top level directory: `cd <your_path>/Robot-GoChaseIt/catkin_ws`
+2. Open top level directory: `cd RobotND-GoChaseIt/catkin_ws`
 3. Execute in terminal: `source devel/setup.bash`
-4. Launch Gazebo simulator and Rviz: `roslaunch my_robot world.launch`
-5. Launch `drive_bot` and `process_image`: `roslaunch ball_chaser ball_chaser.launch`
+4. In terminal, launch Gazebo simulator and Rviz: `roslaunch my_robot world.launch`
+5. In a new terminal, launch `drive_bot` and `process_image`: `roslaunch ball_chaser ball_chaser.launch`
 6. Move the white ball in front of the robot to perform following in Gazebo simulator.
 
 ## Summary of Tasks
