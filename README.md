@@ -2,6 +2,8 @@
 
 This repo contains the second project of the Robotics Software Engineer Nanodegree Program from Udacity. The program shows a robot which can follow a white ball by analysis of an image from a mounted camera using Gazebo and ROS.
 
+![gazebo_example](image_gazebo.png)
+
 ## Dependencies for Running
 * cmake >= 3.11
   * Linux: [click here for installation instructions](https://cmake.org/install/)
