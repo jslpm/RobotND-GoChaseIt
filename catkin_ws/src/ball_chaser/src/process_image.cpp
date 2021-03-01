@@ -31,20 +31,22 @@ void process_image_callback(const sensor_msgs::Image img)
   // Request a stop when there's no white ball seen by the camera
   ball_found = false;
   robot_dir = direction::stop;
-  int one_third_image = img.step / 3;
-  int two_thirds_image = 2 * img.step / 3;
+  int one_third_image = img.width / 3;
+  int two_thirds_image = 2 * img.width / 3;
 
   for (int h = 0; h < img.height; h++) 
   {
-    for(int s = 0; s < img.step; s++)
+    for(int w = 0; w < img.width; w++)
     {
-      if (img.data[h*img.step+s] == white_pixel)
+      if (img.data[3*w+h*img.step] == white_pixel && 
+          img.data[3*w+h*img.step+1] == white_pixel && 
+          img.data[3*w+h*img.step+2] == white_pixel)
       {
         ball_found = true;
 
-        if (s < one_third_image)
+        if (w < one_third_image)
           robot_dir = direction::left;
-        else if (s < two_thirds_image)
+        else if (w < two_thirds_image)
           robot_dir = direction::forward;
         else
           robot_dir = direction::right;
